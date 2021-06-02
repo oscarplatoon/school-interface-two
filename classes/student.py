@@ -17,5 +17,6 @@ class Student(Person):
             reader = csv.DictReader(csvfile)
             for row in reader:
                 students.append(Student(**dict(row)))
+                print(row)
         return students
 

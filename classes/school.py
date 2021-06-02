@@ -15,4 +15,6 @@ class School:
         for student in self.students:
             if school_id == student.school_id:
                 return student
-            return None
+        return(None)
+
+school = "hell"
