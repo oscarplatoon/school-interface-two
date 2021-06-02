@@ -8,5 +8,5 @@ class School:
         self.students = Student.objects()
 
     def list_students(self):
-        for student in self.students:
-            print(student)
+        for index, student in enumerate(self.students):
+            print(f"{index+1}. {student.name} {student.school_id}")
