@@ -20,3 +20,6 @@ class Staff(Person):
                 staff.append(Staff(**dict(row)))
 
         return staff
+
+    # def __str__(self):
+    #     return f"Name:{self.name} ID {self.employee_id}"
