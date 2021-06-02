@@ -6,3 +6,17 @@ class School:
         self.name = name
         self.staff = Staff.objects()
         self.students = Student.objects()
+
+    def list_students(self):
+        print('\n')
+        for i, student in enumerate(self.students):
+            print(f'{i + 1}. {student.name} {student.school_id}')
+    
+    def find_student_by_id(self, student_id):
+        for student in self.students:
+            if student.school_id == student_id:
+                return student 
+    
+    def __str__(self, student):
+        print(f"{student.name}\n age: {student.age}\n id: {student.school_id}\n password: {student.password}\n role: {student.role}")
+        
