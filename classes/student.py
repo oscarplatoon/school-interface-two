@@ -18,4 +18,13 @@ class Student(Person):
             for row in reader:
                 students.append(Student(**dict(row)))
         return students
-
+    
+    @classmethod
+    def empty(cls):
+        #def __init__(self, name, age, password, role, school_id):
+        return cls("Not Found", -1, "xx", "Student", -1)
+        
+    def __str__(self):
+        output = self.name.upper()
+        output += f"\n---------------\nage: {self.age}\nid: {self.school_id}"
+        return output
