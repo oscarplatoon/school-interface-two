@@ -18,5 +18,5 @@ class School:
         for obj in self.students:
             if obj.school_id == student_id:
                 # print(obj.name)
-                return obj.name
+                return obj
         return 'Student Does not exist'
