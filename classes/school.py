@@ -6,3 +6,7 @@ class School:
         self.name = name
         self.staff = Staff.objects()
         self.students = Student.objects()
+
+    def list_students(self):
+        for student in self.students:
+            print(student)
