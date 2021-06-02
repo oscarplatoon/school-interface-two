@@ -9,7 +9,9 @@ while(True):
         school.list_students()
 
     elif mode == '2':
-        pass
+        school_id = input('Enter school id: ')
+        student = school.find_student_by_id(school_id)
+        print(str(student))
     elif mode == '3':
         pass
     elif mode == '4':

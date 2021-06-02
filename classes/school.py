@@ -10,3 +10,9 @@ class School:
     def list_students(self):
         for index, student in enumerate(self.students):
             print(f"{index+1}. {student.name} {student.school_id}")
+    
+    def find_student_by_id(self, school_id):
+        for student in self.students:
+            if school_id == student.school_id:
+                return student
+            return None
