@@ -16,5 +16,3 @@ class School:
             if school_id == student.school_id:
                 return student
         return(None)
-
-school = "hell"
